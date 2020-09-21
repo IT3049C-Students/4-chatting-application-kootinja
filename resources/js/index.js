@@ -16,21 +16,14 @@ async function updateMessages() {
   // Fetch Messages
   const messages = await fetchMessages();
   // Loop over the messages. Inside the loop we will:
-      // get each message
-      // format it
-      // add it to the chatbox
-  let formattedMessages = "";
+  // get each message
+  // format it
+  // add it to the chatbox
+  let formattedMessages = ``;
   messages.forEach(message => {
-      formattedMessages += formatMessage(message, nameInput.value);
-  });
-  chatBox.innerHTML = formattedMessages;
-}
-
-  let formattedMessages = ``;                                    
-  messages.forEach(message => {                                   
     formattedMessages += formatMessage(message, nameInput.value);
   });
-  chatBox.innerHTML = formattedMessages;                     
+  chatBox.innerHTML = formattedMessages;
 }
 
 function formatMessage(message, myName) {
@@ -62,5 +55,14 @@ function formatMessage(message, myName) {
         `;
   }
 }
+function sendMessages (username, text) {
+  const newMessage = {
+    sender: username,
+    text: text,
+    timestamp: new Date()
+  };
 
+  // eslint-disable-next-line no-undef
+  $.post(serverURL, newMessage);
+}
 
