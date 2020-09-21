@@ -6,14 +6,16 @@ Instructions to this assignment can be found [here](#).
 
 ## Checklist:
 - [x] update the assignment checks above to the correct link. - Done Automatically
-- [ ] make sure the assignment checks pass
-- [ ] fill out the self evaluation and Reflection
-- [ ] submit the repository link on Canvas
+- [x] make sure the assignment checks pass
+- [x] fill out the self evaluation and Reflection
+- [x] submit the repository link on Canvas
 
 ## Self-Evaluation:
 
-how many points out of 20 do you deserve on this assignment:
+how many points out of 20 do you deserve on this assignment: 20
 
 ## Self-Reflection:
+I think I did well on this assignment and was able to complete all the tasks on time. I was also able to comprehend what all I had to 
 
 ### How long it took me to finish this?
+2.5 hours
