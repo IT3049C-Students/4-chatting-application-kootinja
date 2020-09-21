@@ -55,6 +55,7 @@ function formatMessage(message, myName) {
         `;
   }
 }
+
 function sendMessages (username, text) {
   const newMessage = {
     sender: username,
@@ -62,8 +63,13 @@ function sendMessages (username, text) {
     timestamp: new Date()
   };
 
-  // eslint-disable-next-line no-undef
-  $.post(serverURL, newMessage);
+  fetch(serverURL, {
+    method: `POST`,
+    headers: {
+      'Content-Type': `application/json`
+    },
+    body: JSON.stringify(newMessage)
+  });
 }
 sendButton.addEventListener(`click`, function(sendButtonClickEvent) {
   sendButtonClickEvent.preventDefault();
